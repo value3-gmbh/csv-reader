@@ -1,0 +1,19 @@
+{
+    "name": "value3/csv-reader",
+    "description": "Csv Reader",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Value3\\CsvReader\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Wahid Rahim",
+            "email": "info -at- value3.de"
+        }
+    ],
+    "require": {
+        "php": ">=8.0"
+    }
+}
