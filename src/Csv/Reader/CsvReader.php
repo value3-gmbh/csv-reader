@@ -11,15 +11,20 @@ class CsvReader
 {
 
     /**
-     * @param string $filePath
+     * @param string|resource $filePath
      * @param string $separator
      * @param string $enclosure
      * @return \Generator
      * @throws \Value3\Csv\Exception\InvalidHeaderException
      */
-    public function read(string $filePath, string $separator = ';', string $enclosure = '"'): Generator
+    public function read(mixed $filePath, string $separator = ';', string $enclosure = '"'): Generator
     {
-        $handle = fopen($filePath, 'rb');
+        if(is_resource($filePath)) {
+            $handle = $filePath;
+        } else  {
+            $handle = fopen($filePath, 'rb');
+        }
+
         $header = fgetcsv($handle, 4096, $separator, $enclosure);
 
         $this->assertHeaderValueNotEmpty($header);
