@@ -1,6 +1,9 @@
 {
     "name": "value3/csv-reader",
     "description": "Csv Reader",
+    "type": "library",
+    "keywords": [],
+    "homepage": "https://symfony.com",
     "license": "MIT",
     "autoload": {
         "psr-4": {
@@ -15,5 +18,7 @@
     ],
     "require": {
         "php": ">=8.0"
-    }
+    },
+
+    "minimum-stability": "dev"
 }
