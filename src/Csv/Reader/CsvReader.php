@@ -7,15 +7,11 @@ namespace Value3\Csv\Reader;
 use Generator;
 use Value3\Csv\Exception\InvalidHeaderException;
 
-class CsvReader
+class CsvReader implements CsvReaderInterface
 {
 
     /**
-     * @param string|resource $filePath
-     * @param string $separator
-     * @param string $enclosure
-     * @return \Generator
-     * @throws \Value3\Csv\Exception\InvalidHeaderException
+     * @inheritDoc
      */
     public function read(mixed $filePath, string $separator = ';', string $enclosure = '"'): Generator
     {
