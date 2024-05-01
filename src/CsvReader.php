@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Value3\Csv\Reader;
+namespace Value3\CsvReader;
 
 use Generator;
 use Value3\Csv\Exception\InvalidHeaderException;

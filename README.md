@@ -8,7 +8,7 @@ composer require value3/csv-reader
 ```php
 <?php
     
-use Value3\Csv\Reader\CsvReader;
+use Value3\CsvReader\CsvReader;
 
 $reader = new CsvReader();
 
