@@ -1,5 +1,5 @@
 # PHP library to read large CSV files 
-The repository has not other dependencies. 
+The repository has not other dependencies. It uses PHP Generators to process large files with excessive memory usage. 
 
 ```
 composer require value3/csv-reader

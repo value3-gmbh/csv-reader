@@ -3,7 +3,7 @@
     "description": "Csv Reader",
     "type": "library",
     "keywords": [],
-    "homepage": "https://symfony.com",
+    "homepage": "https://www.value3.de",
     "license": "MIT",
     "autoload": {
         "psr-4": {
@@ -12,8 +12,7 @@
     },
     "authors": [
         {
-            "name": "Wahid Rahim",
-            "email": "info -at- value3.de"
+            "name": "Wahid Rahim"
         }
     ],
     "require": {
